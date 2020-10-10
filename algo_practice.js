@@ -1,3 +1,23 @@
+function fib(n) { //***study the fibonacci
+  let a = 1;
+  let b = 1;
+  for (let i = 3; i <= n; i++) {
+    //c = 3
+    //c = 2;
+    let c = a + b;
+
+    //a =2
+    //a = 1
+    a = b;
+
+    //b = 3
+    //b = 2
+    b = c;
+  }
+  return b;
+}
+
+
 //1st Algo ******
 var countBits = function (n) {
   //turns number into binary code 2 -> "10"
