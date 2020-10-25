@@ -35,4 +35,23 @@ function getCount(str) {
   }
 }
 
+//Take a look at the algo below
 
+function digital_root(n){
+  debugger
+
+  if(n < 10){
+      return n;
+   }
+
+  //We going to get the last number from by
+  //by dividing n with 10. Remainder will be last
+  //number of n
+  const lastNumber = n % 10;
+  
+  //Remaining number is the number left on n
+  //after removing the last number
+  const remainingNumber = Math.floor(n/10);
+
+  return digital_root(lastNumber + digital_root(remainingNumber));
+}
