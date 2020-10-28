@@ -91,4 +91,9 @@ function expandedForm(num) {
 
 function count(string) { 
   let array = string.split('');
+  
+  for (let i = 0; i < array.length; i++) { 
+    if () { 
+      
+  }
 }
