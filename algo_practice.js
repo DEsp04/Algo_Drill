@@ -58,7 +58,7 @@ function digital_root(n){
 }
 
 
-//5th Algo
+//5th Algo ****
 /*
 -Create a variable and assign it a number where it will turn to string and split number 
 into individual elements in an array.
@@ -84,4 +84,11 @@ function expandedForm(num) {
  
   numStr = numStr.filter(value => !value.startsWith(0));
   return numStr.join(' + ')
+}
+
+
+//6th algo
+
+function count(string) { 
+  let array = string.split('');
 }
