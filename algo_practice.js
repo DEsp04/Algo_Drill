@@ -92,15 +92,13 @@ function expandedForm(num) {
 function count(string) {
   let array = string.split('');
   let object = {};
-  let counter = 0;
   
   for (let i = 0; i < array.length; i++) {
     if (object.hasOwnProperty !== array[i]) {
-      counter++
-      object[array[i]] = counter
+      object[array[i]] = 1;
     } else { 
-      
+      object[array[i]] = object[array[i]] + 1;
     }
   }
-  
+  return object;
 }
