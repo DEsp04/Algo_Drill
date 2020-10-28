@@ -89,11 +89,18 @@ function expandedForm(num) {
 
 //6th algo
 
-function count(string) { 
+function count(string) {
   let array = string.split('');
+  let object = {};
+  let counter = 0;
   
-  for (let i = 0; i < array.length; i++) { 
-    if () { 
+  for (let i = 0; i < array.length; i++) {
+    if (object.hasOwnProperty !== array[i]) {
+      counter++
+      object[array[i]] = counter
+    } else { 
       
+    }
   }
+  
 }
