@@ -94,11 +94,17 @@ function count(string) {
   let object = {};
   
   for (let i = 0; i < array.length; i++) {
-    if (object.hasOwnProperty !== array[i]) {
+    if (!object.hasOwnProperty(array[i])) {
       object[array[i]] = 1;
     } else { 
       object[array[i]] = object[array[i]] + 1;
     }
   }
   return object;
+}
+
+//7th Algo
+
+function descendingOrder(n) { 
+  
 }
