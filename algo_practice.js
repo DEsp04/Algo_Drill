@@ -106,8 +106,7 @@ function count(string) {
 //7th Algo
 
 function descendingOrder(n) { 
-  let arrayNum = n.toString().split('');
+  let arrayNum = num.toString().split('').sort((a,b) => a - b).reverse();
 
-  
-
+  return arrayNum;
 }
