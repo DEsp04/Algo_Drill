@@ -110,3 +110,16 @@ function descendingOrder(n) {
 
   return Number(arrayNum);
 }
+
+//8th Algo
+
+function number(array) { 
+  let arr = [...array]
+  for (let i = 0; i < arr.length; i++) { 
+    if (arr.length !== 0) { 
+      arr[i] = `${i + 1}: ${arr[i]}`
+    }
+  }
+
+  return arr;
+}
