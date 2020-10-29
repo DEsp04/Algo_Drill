@@ -108,5 +108,5 @@ function count(string) {
 function descendingOrder(n) { 
   let arrayNum = num.toString().split('').sort((a,b) => a - b).reverse();
 
-  return arrayNum;
+  return Number(arrayNum);
 }
