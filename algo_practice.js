@@ -160,6 +160,8 @@ function openOrSenior(data){
 
 openOrSenior([[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]);
 
+
+//Algo 8
 /*
 The new "Avengers" movie has just been released! There are a lot of people 
 at the cinema box office standing in a huge line. Each of them has a 
@@ -202,4 +204,27 @@ function tickets(peopleInLine) {
     return 'YES'
 }
   
-tickets([25,25,25,100,25,25,25,100,25,25,50,100,25,50,25,100,25,50,25,100 ]);
+tickets([25, 25, 25, 100, 25, 25, 25, 100, 25, 25, 50, 100, 25, 50, 25, 100, 25, 50, 25, 100]);
+
+
+
+/* 
+Given: an array containing hashes of names
+
+Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
+
+Example:
+
+list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// returns 'Bart, Lisa & Maggie'
+*/
+
+
+function list(arr){
+  let len = arr.length;
+  if(len==0) return '';
+  return arr
+       .slice(0, len-1)
+       .map((e) => e.name)
+       .join(", ") + (len > 1 ? ' & ' : '') + arr[len - 1].name
+}
